@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Контакти</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="#sourse/css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="shortcut icon" href="img/icon/main/icon.ico" type="image/ico">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="main contacts">
+				<h1 style="align-content: center;">Є запитання? - Заповніть форму нижче</h1>
+				<form class="main__form" action="#" method="post" enctype="multipart/form-data">
+					<div class="form__name shadow">
+						<input class="name" name="name" type="text" placeholder="Ім'я" value="">
+						<input class="surname" name="surname" type="text" placeholder="Прізвище" value="">
+					</div>
+					<div class="form__gender shadow">
+						Стать:
+						<div class="gender__male"><input name="gender" type="radio" value="male">Чоловіча</div>
+						<div class="gender__female"><input name="gender" type="radio" value="female">Жіноча</div>
+					</div>
+					<div class="form__contacts shadow">
+						<input class="tel" type="tel" name="tel" placeholder="Номер телефону" value="">
+						<input class="e-mail" type="text" name="e-mail" placeholder="E-mail" value="">
+					</div>
+					<div class="form__photo shadow">
+						Ваше фото:
+						<input class="file" type="file" name="photo">
+					</div>
+					<div class="form__town shadow">
+						<input class="town" name="town" type="text" placeholder="Місто" value="">
+						<div class="town__always">
+							<input class="always" type="checkbox" name="town_always" value=""> Постійне проживання
+						</div>
+						<div class="town__always">
+							<input class="wifi" type="checkbox" name="town_wifi" value=""> Постійний доступ до мережі
+						</div>
+					</div>
+					<div class="form__about shadow">
+						<textarea autocomplete="off" class="textabout" name="about" cols="30" rows="10" placeholder="Розкажіть про себе"></textarea>
+					</div>
+					<div class="buttons">
+						<button disabled class="send" type="submit">Надіслати</button>
+						<button class="clear" type="reset">Очистити форму</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<script src="js/header.js" type="text/javascript"></script>
+		<script src="js/footer.js" type="text/javascript"></script>
+		<script src="js/script.js" type="text/javascript"></script>
+	</body>
+</html>
